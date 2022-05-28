@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 *{
     padding: 0;
@@ -7,14 +7,9 @@
 }
 
 html {
-    font-family: 'IBM Plex Serif', 'Times New Roman', Times, serif;
     font-size: 12px;
-    margin: 0;
-    padding: 0;
+    font-family: 'IBM Plex Serif', 'Times New Roman', Times, serif;
     overflow: hidden;
-    width: fit-content;
-    height: fit-content;
-    box-sizing: border-box;
     scroll-behavior: smooth;
     background-color: black;
 }
@@ -23,16 +18,30 @@ a {
     text-decoration: none;
 }
 
+canvas {
+    display: block;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
 ul {
     list-style: none;
 }
 
 li {
-    text-align: -webkit-match-parent;
+    text-align:-webkit-match-parent;
 }
 
-canvas {
-    display: block;
+p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.05rem;
+    font-weight: 200;
+    margin-top: 5px;
 }
 
 #backgroundMatrix {
@@ -40,7 +49,7 @@ canvas {
     z-index: -1;
 }
 
-#apresentation-container {
+#presentation-container {
     width: fit-content;
     position: absolute;
     display: block;
@@ -53,7 +62,7 @@ canvas {
     color: #F7BB2A;
     background-color: #711F8C;
     font-size: 3rem;
-    animation: text_reveal_box .5s ease forwards;
+    animation: text_reveal .5s ease forwards;
     animation-delay: 1.5s;
 }
 
@@ -73,9 +82,14 @@ canvas {
     height: 55px;
     padding-left: 20px;
     margin-left: -20px;
+    transition: transform 425ms cubic-bezier(.05,.65,.18,1);
+    transition-property: transform;
+    transition-duration: 425ms;
+    transition-timing-function: cubic-bezier(0.05, 0.65, 0.18, 1);
+    transition-delay: 0s;
 }
 .my-socials span {
-    background: url(./socials-icon.svg);
+    background: url(https://raw.githubusercontent.com/Gabriel-Marino/Gabriel-Marino.github.io/0b32dde9a2d58c896249051eeff544ba5fbab4fb/socials-icon.svg);
     background-repeat: no-repeat;
     background-attachment: initial;
     background-origin: initial;
@@ -89,11 +103,9 @@ canvas {
 }
 .my-socials .github {
     background-color: #4e545a;
-    transition: transform 425ms cubic-bezier(.05,.65,.18,1);
-    transition-property: transform;
-    transition-duration: 425ms;
-    transition-timing-function: cubic-bezier(0.05, 0.65, 0.18, 1);
-    transition-delay: 0s;
+}
+.my-socials .github span {
+    background-position: -5px -100px;
 }
 .my-socials .linkedin {
     background-color: #0077ba;
