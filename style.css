@@ -14,27 +14,10 @@ html {
     background-color: black;
 }
 
-a {
-    text-decoration: none;
-}
-
 canvas {
     display: block;
 }
 
-img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-ul {
-    list-style: none;
-}
-
-li {
-    text-align:-webkit-match-parent;
-}
 
 p {
     font-size: 1.5rem;
@@ -44,9 +27,9 @@ p {
     margin-top: 5px;
 }
 
-#backgroundMatrix {
+#matrix-rain {
     position: absolute;
-    z-index: -1;
+    z-index: -1001;
 }
 
 #presentation-container {
@@ -59,57 +42,7 @@ p {
     margin-left: -100px;
     padding: 23px;
     border-radius: 23px 47px;
+    font-size: 3rem;
     color: #F7BB2A;
     background-color: #711F8C;
-    font-size: 3rem;
-    animation: text_reveal .5s ease forwards;
-    animation-delay: 1.5s;
-}
-
-#my-socials {
-    z-index: 1001;
-    position: fixed;
-    left: 0;
-    top: calc(50% - (275px / 2));
-    width: 55px;
-    height: 275px;
-}
-.my-socials a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 75px;
-    height: 55px;
-    padding-left: 20px;
-    margin-left: -20px;
-    transition: transform 425ms cubic-bezier(.05,.65,.18,1);
-    transition-property: transform;
-    transition-duration: 425ms;
-    transition-timing-function: cubic-bezier(0.05, 0.65, 0.18, 1);
-    transition-delay: 0s;
-}
-.my-socials span {
-    background: url(https://raw.githubusercontent.com/Gabriel-Marino/Gabriel-Marino.github.io/0b32dde9a2d58c896249051eeff544ba5fbab4fb/socials-icon.svg);
-    background-repeat: no-repeat;
-    background-attachment: initial;
-    background-origin: initial;
-    background-clip: initial;
-    background-color: initial;
-    display: block;
-    width: 35px;
-    height: 35px;
-    text-indent: -9999rem;
-    background-size: 100% auto;
-}
-.my-socials .github {
-    background-color: #4e545a;
-}
-.my-socials .github span {
-    background-position: -5px -100px;
-}
-.my-socials .linkedin {
-    background-color: #0077ba;
-}
-.my-socials .twitter {
-    background-color: #3299ff;
 }

@@ -1,4 +1,4 @@
-const MatrixRain    = document.getElementById("backgroundMatrix");
+const MatrixRain    = document.getElementById("matrix-rain");
 const MatrixContext = MatrixRain.getContext('2d');
 
 MatrixRain.width  = window.innerWidth;
