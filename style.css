@@ -15,6 +15,11 @@
     box-sizing: border-box;
 }
 
+*::selection {
+    background-color: transparent;
+    color: #ffffff;
+}
+
 *::-webkit-scrollbar {
     width: 7px;
 }
